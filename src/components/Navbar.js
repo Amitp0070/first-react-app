@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+// importing the propstypes using short "impt"
 
 export default function Navbar(props) {
   return (
@@ -55,13 +56,20 @@ export default function Navbar(props) {
   );
 }
 
+// Props  Concept
+
+// Yeh batata hai ki `Navbar` component ke `propTypes` kya hone chahiye
 Navbar.propTypes = {
+  // `Hometext` prop string hona chahiye aur yeh required hai
   Hometext: PropTypes.string.isRequired,
+  // `About` prop bhi string hona chahiye aur yeh bhi required hai
   About: PropTypes.string.isRequired,
 };
 
-// Specifies the default values for props:
+// Yeh default values set karta hai agar `props` nahi diye gaye ho toh
 Navbar.defaultProps = {
+  // Agar `Hometext` nahi diya toh "Home" ko default set karega
   Hometext: "Home",
+  // Agar `About` prop nahi diya toh "Set about text here" ko default karega
   About: "Set about text here",
 };
