@@ -110,7 +110,7 @@ export default function TextForm(props) {
               className="btn btn-danger my-2 mx-1"
               onClick={handleDeleteClick}
             >
-              Clear all text
+              Clear all Text
             </button>
           </div>
         </div>
